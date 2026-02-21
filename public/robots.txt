@@ -1,0 +1,6 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow:
+
+# Sitemap (important for SEO)
+Sitemap: https://www.stellaritglobal.com/sitemap.xml
