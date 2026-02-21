@@ -14,10 +14,9 @@ export async function POST(req) {
         response.cookies.set('adminToken', process.env.NEXT_PUBLIC_ADMIN_TOKEN, {
             httpOnly: true,
             secure: true,
-            sameSite: 'strict',
-            domain: '.vercel.app',
+            sameSite: 'lax',
+            // domain: 'seller-jade.vercel.app',
             path: '/',
-            maxAge: 60 * 60 * 24 * 1,
         });
 
         return response;

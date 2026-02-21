@@ -6,10 +6,10 @@ export async function POST(req) {
     response.cookies.delete('adminToken', {
         httpOnly: true,
         secure: true,
-        sameSite: 'strict',
+        sameSite: 'lax',
         path: '/',
-        domain: '.vercel.app',
-        maxAge: 60 * 60 * 24 * 1,
+        // domain: 'seller-jade.vercel.app',
+        // maxAge: 60 * 60 * 24 * 1,
     })
 
     return response
