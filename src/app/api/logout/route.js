@@ -8,7 +8,7 @@ export async function POST(req) {
         secure: true,
         sameSite: 'strict',
         path: '/',
-        domain: 'stellaritglobal.com',
+        domain: '.vercel.app',
         maxAge: 60 * 60 * 24 * 1,
     })
 

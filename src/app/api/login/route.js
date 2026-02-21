@@ -15,7 +15,7 @@ export async function POST(req) {
             httpOnly: true,
             secure: true,
             sameSite: 'strict',
-            domain: 'stellaritglobal.com',
+            domain: '.vercel.app',
             path: '/',
             maxAge: 60 * 60 * 24 * 1,
         });
